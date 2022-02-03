@@ -1,5 +1,12 @@
-import React from "react";
+import { RepositoryList } from "./components/RepositoryList";
+import { Caunter } from "./components/Caunter";
+import "./styles/global.scss";
 
-function App() {
-  return <h1>Hello World</h1>;
+export function App() {
+  return (
+    <>
+      <RepositoryList />
+      <Caunter />
+    </>
+  );
 }
