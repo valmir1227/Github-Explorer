@@ -5,7 +5,7 @@ import "../styles/repositories.scss";
 interface Repository {
   name: string;
   description: string;
-   html_url: string;
+  html_url: string;
 }
 export function RepositoryList() {
   const [respositories, setRepositories] = useState<Repository[]>([]);

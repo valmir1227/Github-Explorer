@@ -8,6 +8,10 @@ interface RepositoryItemProps {
 
 
 export function RepositoryItem(props: RepositoryItemProps) {
+  if (!props.repository.description) {
+    props.repository.description = "Este repositório ainda está sem descrição."
+  }
+
   return (
     <li>
       <strong>{props.repository.name}</strong>
